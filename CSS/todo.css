@@ -10,3 +10,70 @@
     width: 1500px;
     height: 100px;
 }
+.separacion{
+    display: flex;
+}
+.grande{
+    background-color: fuchsia;
+    width: 130px;
+    height: 30px;
+    font-size: 2em;
+}
+.pequeño{
+    background-color: red;
+    width: 130px;
+    height: 30px;
+    font-size: 2em;
+}
+.mediano{
+    background-color: greenyellow;
+    width: 130px;
+    height: 30px;
+    font-size: 2em;
+}
+.busqueda{
+    position: absolute;
+    left: 85%;
+}
+.nemo{
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding: 0 20px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid blue;
+    transition: all .7s ease;
+}
+::placeholder{
+    color:yellow;
+}
+.Botono{
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 80 px;
+    background: purple;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;    
+}
+.Botono img{
+    font-size: 25px;
+    color: white;
+    line-height: 80px;
+    transition: all .7s ease;
+}
+.busqueda:hover input{
+    width: 350px;
+}
+.busqueda:hover img{
+    transform: rotate(-360deg);
+}   
+.Botono:hover{
+    background-color: purple;
+}
