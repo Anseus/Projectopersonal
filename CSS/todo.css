@@ -10,26 +10,24 @@
     width: 1500px;
     height: 100px;
 }
+.fondo{
+    background-color: orange;
+    padding: 100px;
+}
 .grande{
     background-color: fuchsia;
-    width: 500px;
-    height: 300px;
     font-size: 2em;
     margin: 400px;
 
 }
 .pequeño{
     background-color: red;
-    width: 500px;
-    height: 300px;
     font-size: 2em;
     margin: 400px;
 
 }
 .mediano{
     background-color: greenyellow;
-    width: 500px;
-    height: 300px;
     margin: 400px;
     font-size: 2em;
 
@@ -83,4 +81,15 @@
 }   
 .Botono:hover{
     background-color: purple;
+}
+
+.va{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ve{
+    display: inline-block;
+    vertical-align: middle;
 }
