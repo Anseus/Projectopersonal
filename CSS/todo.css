@@ -10,30 +10,36 @@
     width: 1500px;
     height: 100px;
 }
-.separacion{
-    display: flex;
-}
 .grande{
     background-color: fuchsia;
-    width: 130px;
-    height: 30px;
+    width: 500px;
+    height: 300px;
     font-size: 2em;
+    margin: 400px;
+
 }
 .pequeño{
     background-color: red;
-    width: 130px;
-    height: 30px;
+    width: 500px;
+    height: 300px;
     font-size: 2em;
+    margin: 400px;
+
 }
 .mediano{
     background-color: greenyellow;
-    width: 130px;
-    height: 30px;
+    width: 500px;
+    height: 300px;
+    margin: 400px;
     font-size: 2em;
+
 }
 .busqueda{
     position: absolute;
-    left: 85%;
+    left: 90%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
 }
 .nemo{
     outline: none;
@@ -48,11 +54,12 @@
     transition: all .7s ease;
 }
 ::placeholder{
-    color:yellow;
+    color:green;
 }
 .Botono{
     position: absolute;
     right: 0;
+    top: 0;
     width: 80px;
     height: 80 px;
     background: purple;
