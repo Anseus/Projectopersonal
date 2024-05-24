@@ -2,16 +2,29 @@
   color: aqua;
 }
 
-  .horizontal-words {
-    display: flex; /* Utiliza Flexbox para alinear las palabras en una línea */
-    justify-content: space-around; /* Espacia uniformemente las palabras */
-    align-items: center; /* Centra verticalmente las palabras si hay altura definida */
-    text-align: center; /* Centra el texto dentro de cada elemento */
-    margin: 20px; /* Añade un margen alrededor del contenedor */
+.vertical-words {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en una columna (verticalmente) */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto dentro de cada elemento */
+  margin: 20px; /* Añade un margen alrededor del contenedor */
 }
 
 .word {
-    font-size: 24px; /* Cambia el tamaño de la letra */
-    padding: 10px; /* Añade espacio alrededor de cada palabra */
+  font-size: 48px; /* Cambia el tamaño de la letra */
+  margin: 20px 0; /* Añade espacio vertical entre las palabras */
 }
+
+.word.red {
+  color: red;
+}
+
+.word.green {
+  color: green;
+}
+
+.word.blue {
+  color: blue;
+}
+
 
