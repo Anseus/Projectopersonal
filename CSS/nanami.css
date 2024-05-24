@@ -1,3 +1,17 @@
 .elemento{
   color: aqua;
 }
+
+  .horizontal-words {
+    display: flex; /* Utiliza Flexbox para alinear las palabras en una línea */
+    justify-content: space-around; /* Espacia uniformemente las palabras */
+    align-items: center; /* Centra verticalmente las palabras si hay altura definida */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+    margin: 20px; /* Añade un margen alrededor del contenedor */
+}
+
+.word {
+    font-size: 24px; /* Cambia el tamaño de la letra */
+    padding: 10px; /* Añade espacio alrededor de cada palabra */
+}
+
