@@ -12,30 +12,30 @@
 }
 .fondo{
     background-color: orange;
-    padding: 100%;
+    padding: 4%;
 }
 .grande{
     background-color: fuchsia;
     font-size: 2em;
-    margin: 20%;
+    margin: 5%;
 
 }
 .pequeño{
     background-color: red;
     font-size: 2em;
-    margin: 20%;
+    margin: 5%;
 
 }
 .mediano{
     background-color: greenyellow;
-    margin: 20%;
+    margin: 5%;
     font-size: 2em;
 
 }
 .busqueda{
     position: absolute;
-    left: 90%;
-    top: 5%;
+    left: 87%;
+    top: 11%;
     transform: translate(-50%, -50%);
     padding: 10px;
 }
@@ -92,4 +92,20 @@
 .ve{
     display: inline-block;
     vertical-align: middle;
+}
+.patata{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.patata ul a:hover{
+    background-color: purple;
+    color:greenyellow;
+}
+.patata ul{
+    background-color: grey;
+}
+.merenge{
+    font-size: 40px;
+    color: gray;
 }
