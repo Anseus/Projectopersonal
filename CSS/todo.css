@@ -12,23 +12,23 @@
 }
 .fondo{
     background-color: orange;
-    padding: 100px;
+    padding: 100%;
 }
 .grande{
     background-color: fuchsia;
     font-size: 2em;
-    margin: 400px;
+    margin: 20%;
 
 }
 .pequeño{
     background-color: red;
     font-size: 2em;
-    margin: 400px;
+    margin: 20%;
 
 }
 .mediano{
     background-color: greenyellow;
-    margin: 400px;
+    margin: 20%;
     font-size: 2em;
 
 }
