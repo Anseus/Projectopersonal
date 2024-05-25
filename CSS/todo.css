@@ -16,21 +16,19 @@
 }
 .grande{
     background-color: fuchsia;
-    font-size: 2em;
-    margin: 5%;
+    font-size: 2vw;
+    margin: 5vw;
 
 }
 .pequeño{
     background-color: red;
-    font-size: 2em;
-    margin: 5%;
-
+    font-size: 2vw;
+    margin: 5vw;
 }
 .mediano{
     background-color: greenyellow;
-    margin: 5%;
-    font-size: 2em;
-
+    margin: 5vw;
+    font-size: 2vw;
 }
 .busqueda{
     position: absolute;
