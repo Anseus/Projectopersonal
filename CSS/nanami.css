@@ -2,7 +2,7 @@
   color: aqua;
 }
 
-.vertical-words {
+.vertical-buttons {
   display: flex;
   flex-direction: column; /* Alinea los elementos en una columna (verticalmente) */
   align-items: center; /* Centra los elementos horizontalmente */
@@ -11,20 +11,32 @@
 }
 
 .word {
-  font-size: 48px; /* Cambia el tamaño de la letra */
-  margin: 20px 0; /* Añade espacio vertical entre las palabras */
+  font-size: 24px; /* Cambia el tamaño de la letra */
+  margin: 10px 0; /* Añade espacio vertical entre los botones */
+  padding: 10px 20px; /* Añade espacio dentro del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  color: white;
 }
 
 .word.red {
-  color: red;
+  background-color: red;
 }
 
 .word.green {
-  color: green;
+  background-color: green;
 }
 
 .word.blue {
-  color: blue;
+  background-color: blue;
 }
+
+.word:hover {
+  opacity: 0.8; /* Cambia la opacidad al pasar sobre el botón para indicar interactividad */
+}
+
+
+
 
 
