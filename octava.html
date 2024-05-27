@@ -4,16 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ocho</title>
+    <style>
+        #map {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Location_map_Barcelona.png'); /* Imagen del mapa */
+            background-size: cover;
+            margin: 0 auto;
+        }
+        .marker {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .marker-label {
+            position: absolute;
+            top: -20px;
+            left: 25px;
+            background-color: white;
+            padding: 2px 5px;
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        #club1 { top: 74%; left: 67%; }
+        #club2 { top: 49%; left: 37%; }
+        #club3 { top: 25%; left: 80%; }
+        #club4 { top: 36%; left: 54%; }
+    </style>
     <link rel="stylesheet" type="text/css" href="CSS/todo.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 </head>
-<body>
+<body style="background-color: blue;" id="nom">
     <div class="fondo">
         <a class="grande" href="sexta.html">DEPORTES NUEVOS</a>
         <a class="pequeño" href="cuarta.html">BIBLIOTECA</a>
         <a class="mediano" href="quinta.html">COMUNIDADES</a>
     </div>
-    <center><h1>Futbol</h1></center>
-    <h2>Informacion</h2>
-    <h3>Historia</h3>
+    <center><h1>FUTBOL</h1></center>
+    <h2>INDEX</h2>
+    <h2>INFORMACIÓN</h2>
+    <h3>Descripcion</h3>
+    <p> El fútbol es un deporte de equipo que se juega entre dos conjuntos de once jugadores cada uno. El objetivo del juego es marcar más goles que el oponente, lo cual se logra al introducir un balón en la portería contraria. Los jugadores, excepto el portero, no pueden tocar el balón con las manos o los brazos mientras esté en juego.</p>
+    <p>El campo de juego es rectangular y está cubierto de césped, con una portería en cada extremo. Un partido de fútbol se divide en dos tiempos de 45 minutos cada uno, con un descanso de 15 minutos entre ambos. Si el marcador está empatado al final del tiempo reglamentario, en algunas competiciones puede haber tiempo extra y, eventualmente, una tanda de penaltis para decidir el ganador.</p>
+    <p>El fútbol es el deporte más popular del mundo, con millones de aficionados y jugadores en casi todos los países. Se destaca por su simplicidad y la pasión que despierta, siendo la Copa Mundial de la FIFA uno de los eventos deportivos más vistos a nivel global.</p>
+    <h3>Beneficios</h3>
+    <p>Jugar al fútbol tiene múltiples beneficios para la salud, tanto para el cuerpo como para la mente y, por supuesto para las relaciones sociales. Este deporte puede aportar grandes ventajas a cualquier persona, tenga la edad que tenga, pero en el caso de los adolescentes, el impacto que tiene sobre ellos practicar fútbol puede ser muy importante para su desarrollo y crecimiento.</p>
+    <p>La adolescencia está llena de cambios emocionales por lo que es importante realizar actividades que impliquen esfuerzo, compromiso, sociabilizarse y motivación. Es una etapa donde la persona está desarrollando su personalidad y formar parte de un equipo y compartir con gente de su edad una actividad física puede ser una buena forma de aprender valores y, sobre todo, de ponerlos en práctica.</p>
+    <p>Y en esta etapa de la vida, los futuros adultos también necesitan actividades que beneficien a su desarrollo físico, ganando resistencia, fuerza y agilidad. El tener que asistir todas las semanas a entrenamientos y partidos establece una rutina sana y dinámica que es muy importante complementar con una alimentación variada y que aporte la energía necesaria para poder rendir fuera y dentro del campo.</p>
+    <h3>Beneficios psicológicos</h3>
+    <ul>
+        <li>Mejora la capacida logica</li>
+        <li>Fomenta la disciplina</li>
+        <li>Mejora el nivel de concentración</li>
+        <li>Mejora la adaptabilidad a cambios</li>
+        <li>Ayuda a relacionarse</li>
+        <li>Alivia el estres</li>
+    </ul>
+    <h3>Beneficios físicos</h3>
+    <ul>
+        <li>Mejora el estado de salud general</li>
+        <li>Ayuda a bajar la presion arterial y el colesterol</li>
+        <li>Fortalece los musculos y aumenta resistencia</li>
+        <li>Ayuda a oxigenar la sangre y aumenta la capacidad cardiovascular</li>
+        <li>Estimula la coordinación motora mejorando el equilibrio, la fuerza y la buena postura corporal</li>
+        <li>Reduce el riesgo de obesidad y previene enfermedades del corazón</li>
+    </ul>
+    <h2>MEJORES CLUBS</h2>
+    <ul>
+        <li>Club de Fútbol La Catalana</li>
+        <li>Club Deportivo Europa</li>
+        <li>Real Club Deportivo Espanyol de Barcelona</li>
+        <li>Fútbol Club Martinenc</li>
+    </ul>
+    <div id="map">
+        <div id="club1" class="marker">
+            <div class="marker-label">Club de Fútbol La Catalana</div>
+        </div>
+        <div id="club2" class="marker">
+            <div class="marker-label">Club Deportivo Europa </div>
+        </div>
+        <div id="club3" class="marker">
+            <div class="marker-label">Real Club Deportivo Espanyol de Barcelona</div>
+        </div>
+        <div id="club4" class="marker">
+            <div class="marker-label">Fútbol Club Martinenc</div>
+        </div>
+    </div>
+    <h2>ENTRENAMIENTOS</h2>
+    <h3>La velocidad</h3>
+    <p>Fartlek</p>
+        <dd>Uno de los ejercicios más completos y sacrificados del fútbol. Este entrenamiento consiste en realizar diferentes cambios de ritmo dando vueltas al campo. Normalmente se realiza con medio campo de F11 y en series de 5-10 minutos. Si utilizamos medio campo tenemos 4 lados, las dos bandas, la portería y el circulo central. La idea es que los jugadores se dividan en dos grupos para hacer el ejercicio. Al principio se inicia con un trote suave, y el primer paso es hacer a sprint uno de los 4 lados. Es decir, sprint una banda y los otros tres cuartos al trote. Progresivamente vas añadiendo cuartos hasta hacer el campo entero a sprint. Se aconseja no prolongar mucho el sprint de los 4 lados para prevenir lesiones.</dd>
+    <p>Escalera de velocidad</p>
+        <dd>La escalera de velocidad es un equipo de entrenamiento simple. Es muy similar a una escalera real pero hecha con un material de lona más resistente. Debido a esto puedes realizar sobre ella algunos movimientos de coordinación y velocidad. En este entrenamiento físico de fútbol lo que buscamos es la velocidad punta y la de reacción. Se pueden realizar varios ejercicios, pero hay dos ejercicios clásicos. En el primero tus jugadores deben levantar las rodillas al nivel de la cintura e ir tocando los espacios. Lo ideal sería poner dos escaleras paralelas para que compitieran entre dos jugadores. Y el segundo ejercicio, los futbolistas han de salir y entrar lateralmente de la escalera. Así potencias también las fintas, el desborde y la velocidad de reacción.</dd>
+    <p>Mini vallas o zancadas</p>
+        <dd>Este ejercicio es parecido a las escaleras pero con variantes. Has de colocar 10 vallas separadas por un metro. Luego haz que tus jugadores corran a través de las vallas mediante zancadas. Es decir, que pisen con un pie en cada espacio. Para modificar un poco la dificultad del entrenamiento físico de fútbol acerca las vallas y haz que repitan el ejercicio. Luego aléjalos y que lo repitan nuevamente.</dd>
+    <p>Paracaídas</p>
+        <dd>Como su propio nombre indica se trata de un paracaídas pero mucho más pequeño. La idea de este ejercicio es que realices carreras progresivas mientras te frena el paracaídas. Cuanta más velocidad cojas más viento y por lo tanto te costará mucho más avanzar. Cómo hemos comentado antes,  es recomendable realizar los ejercicios tras entrenos con poca carga física.</dd>
+    <p>Gomas elásticas</p>
+        <dd>Este es uno de los entrenamientos físicos de fútbol clásicos en todos lo clubes de primer nivel. Es un ejercicio casi igual que el paracaídas pero lo que cambia es el material y un poco la forma. En este entreno necesitas a otra persona que sujete un el extremo de la goma que no lleves tu. Normalmente en los clubes profesionales suelen ser los ayudantes o entre los mismo jugadores. La idea es que la persona que sujeta oponga resistencia para que no puedas moverte con facilidad. Según la fuerza con la que te agarre trabajaras más o menos. Eso si, no es recomendable esta más de 15 segundos aplicando mucha fuerza sino puedes lesionarte. Para terminar, cabe recalcar que en el momento que se suelta la cuerda has de dejarte llevar, no frenar en seco.</dd>
+    <h3>La resistencia</h3>
+    <p>Raid aventura</p>
+        <dd>Esta es una manera diferente de trabajar en dónde,  a parte de mejorar tu resistencia, puedes hacer mejorar la convivencia del equipo. Se trata de una carrera de orientación por un parque o bosque. La prueba consiste en colocar 6 pistas escondidas estratégicamente para resolver el enigma. El entreno ha de durar entre 40 minutos y una hora, y puede ser una actividad que fomente el buen rollo. Para terminar, hay que decir que este ejercicio puede resultar costoso por la necesidad de un espacio muy grande.</dd>
+    <p>Carrera continua</p>
+        <dd>Clásico pero efectivo. Este es uno de los entrenamientos físicos de fútbol iniciales pero a su vez de los más útiles. No tiene ningún secreto, simplemente es salir a la montaña a correr con todo el equipo o dar vueltas al campo. A su vez puede ser un ejercicio de rutina diaria, correr 20 minutos al inicio de cada entreno. Los equipos que dispongan de grandes instalaciones incluso pueden hacer una ruta por estas.</dd>
+    <p>Partidos de futbol</p>
+        <dd>Que mejor ejercicio de fútbol hay para aguantar un partido que un partido. Valga la redundancia, pero es que realmente es así. En un partido de fútbol pones en práctica todos los aspectos entrenados, y es lo más parecido al partido del fin de semana. Casi todos los equipos profesionales, finalizan sus entrenos con partidos. Pueden ser partidos de diferente forma; reducidos (4 vs 4, 3 vs 3), con objetivos (marcaje al hombre, defensa en zona…) o partidos 11 vs 11. Junto a la carrera continua, el abc de los entrenamientos físicos de fútbol.</dd>
+    <h3>La fuerza</h3>
+    <p>Circuitos físicos con definición</p>
+        <dd>Estos son los mejores entrenamientos físicos de fútbol para mejorar la fuerza. Se basa en 4 partes:</dd>
+        <dd>1-En la parte inicial se realizará un ejercicio con las gomas, en donde el jugador ha de correr aguantado por las gomas.</dd>
+        <dd>2-Cuando se sueltas de las gomas realiza un skipping  entre varios aros colocados con 1 metro de separación entre todos.</dd>
+        <dd>3-Tras los aros, se le da un balón al espacio y el jugador ha de driblar unos palos horizontales de forma ágil y veloz.</dd>
+        <dd>4- Finalmente tras el dribling se realizara un disparo a puerta.</dd>        
+        <dd>En resumen, tenemos una parte de fuerza inicial, luego velocidad y finalmente dribling y golpeo a portería. Un ejercicio en dónde trabajar todos los aspectos del fútbol.</dd>
+    <p>Cambios de ritmo</p>
+    <dd>Este es uno de los entrenamientos físicos de fútbol parecidos al de la carrera continua. Hay diferentes formas de entrenar los cambios de ritmos. Una de los ejercicios más útiles es la carrera continua con diferentes zonas. Se realiza en medio campo de fútbol 11, y se inicia con una carrera continua en dos grupos. Luego, cada vez que el entrenador lo indique, los equipos han de hacer un sprint en diagonal para cruzar de un extremo a otro. Esto suele hacerse en series de 15/20 minutos como mucho y con no más de 10 cambios de ritmo, para no cargar al jugador</dd>
+    <h3>La amplitud de movimiento</h3>
+    <p>1v1</p>
+        <dd>Este ejercicio es muy común a la hora de trabajar la amplitud de movimiento. El ejercicio es muy sencillo, simplemente necesitas 4 jugadores y un balón. En un rectángulo de unos 15/20 metros se colocaran 2 comodines en ambos lados y dos jugadores adentro. La idea es que se lleve el balón de un comodín a otro desbordando al rival. Así pues los jugadores de dentro deben zafarse del rival mediante regates, fintas, cambios de ritmo o dirección… Estos ejercicios son de una alta intensidad, por eso se debe ir rotando en series cortas. También trabajamos las paredes con los comodines, algo básico en el fútbol.</dd>
+    <p>1v1 con porteria</p>
+        <dd>Uno de los entrenamientos físicos de fútbol más comunes en los equipos profesionales. La dinámica es muy sencilla y parecida al ejercicio anterior. Hemos de dividir el equipo entre atacantes y defensores. Una vez dividido, el jugador atacante saldrá de medio del campo con el balón y al cruce saltará un defensa. La idea es que mediante una finta, regate o cambio de dirección te deshagas del rival y finalices la jugada. Esto es más similar a una situación de partido, y te puede ayudar a la hora de finalizar la jugada.</dd>
+    <p>Zig zag</p>
+        <dd>Como diría Guardiola, ziga zaga ziga zaga. En este ejercicio se pone a prueba el manejo del balón en carrera y con diferentes obstáculos. El jugador sale en carrera con el balón y luego atraviesa una zona de conos con 1 metro de separación zigzagueando. Tras salir de los conos, se dirigirá hacía otra zona con picas altas que también tendrá que superar zigzagueando. Después de esa zona,  el entrenador dirá derecha o izquierda para fijar en que portería ha de definir. Sin duda alguna, uno de los mejores entrenamientos físicos de fútbol para la amplitud de movimiento.</dd>
+    <p>Par o inpar</p>
+        <dd>Este es un ejercicio destinado a calentamientos, ya que es un poco más divertido. Se han de colocar todos los jugadores en fila a la mitad del campo. Una vez estén todos bien colocados tendrán que escuchar al entrenador. La idea es ir cantando números, sumas o restas y dependiendo si el número es par o impar los jugadores deberán hacer un sprint a una portería u otra. De esta forma consigues velocidad mental y de movimiento, ya que el último en llegar o el que se equivoca hará 20 flexiones.</dd>
+    <h3>Por posición</h3>
+        <p>Entrenamientos físicos de fútbol para Defensas</p>
+           <dd>El físico para los defensas es una parte fundamental porque son los encargados de parar a los jugadores más rápidos.Es por eso que han de hacer especial hincapié en trabajar el físico. Este ejercicio es una buena forma de entrenar el físico para los defensas:</dd>
+           <dd>1-Se empieza desde una portería con un sprint de 10 metros hasta una zona delimitada</dd>
+           <dd>2-En dicha zona el defensa ha de hacer 20 saltos en cuclillas e imitando un cabezazo cuando salte. Al acabar los 20 saltos ha de volver a la portería la trote.</dd>
+           <dd>3-Una vez ahí, ha de hacer un sprint de 20 metros hasta otra zona. Al llegar ha de realizar 15 saltos de cabeza en cuclillas y otra vez vuelve al trote.</dd>
+           <dd>4-Para acabar la serie ha de hacer un sprint hasta la zona de 30 metros. Una vez ahí ha de saltar 10 veces en cuclillas y volver al trote hasta la portería.</dd>
+           <dd>4-Para acabar la serie ha de hacer un sprint hasta la zona de 30 metros. Una vez ahí ha de saltar 10 veces en cuclillas y volver al trote hasta la portería.</dd>
+        <p>Entrenamientos físicos de fútbol para Centrocampistas</p>
+            <dd>Los mediocentros o centrocampistas son de los jugadores más exigidos a nivel físico. Esto se debe a que han de defender, crear juego y también atacar. Navegan entre dos aguas y es por eso que han de poder aguantar las idas y venidas constantes. Por ello os dejamos este ejercicio para entrenar el físico de los medios:</dd>
+            <dd>1-Se inicia desde el punto penal de penalti. Desde ahí han de correr al 75% de velocidad hasta que llegar al punto de penalti opuesto.</dd>
+            <dd>2- Una vez ahí han de hacer 20 flexiones, y tras esta han de realizar 20 sentadillas profundas.</dd>
+            <dd>3-Tras esto, han de correr hasta la línea de medio campo. En el medio campo han de hacer 20 saltos en cuclillas. Al acabarlos han de volver al trote hasta el punto de penalti inicial.</dd>
+            <dd>Se aconseja que se den 2 minutos de descanso entre series y se repita unas seis o siete veces. Hay que pensar siempre en no excederse para prevenir sobrecargas.</dd>
+        <p>Entrenamientos físicos de fútbol para Delanteros</p>
+            <dd>Por último los hombres del gol. Esta posición es muy sacrificada, ya que pese a tener que estar en constante movimiento tocas el balón muchas menos veces. Has de presionar, desmarcarte y estar atento para aprovechar cualquier error contrario y marcar. A continuación os dejamos un ejercicios con el que entrenar el físico de los delanteros:</dd>
+            <dd>1-Al inicio, ha de conducir le balón desde la frontal hasta el punto de penalti y disparar a portería.</dd>
+            <dd>2-Luego ha de girarse e ir de espaldas hasta el poste izquierdo, ahí ha de bajar y hacer 10 flexiones. Cuando acabe las 10 flexiones ha de levantarse y correr hasta el punto de penalti.</dd>
+            <dd>3-Desde ahí, ha de volver a ir de espaldas hasta el poste derecho y hacer 20 abdominales. Al acabar tendrá que salir a sprint hasta la frontal del área. Ahí recibirá un balón y tendrá que hacer un control orientado y definir</dd>
+            <dd>4-Tras el golpe, tendrá que hacer 8 saltos en cuclillas.</dd>
+            <dd>Se recomienda descansar 2 minutos entre cada serie y que se repita ocho veces.</dd>
+    <h3>Entrenamiento en casa</h3>
+        <p>Dribleo entre conos</p>
+            <dd>Uno de los mejores ejercicios de fútbol que se pueden practicar en casa es el regate entre conos. Además no necesitaremos mucho material, con tan sólo un poco de espacio, una pelota y algunos conos o similar podremos llevar a cabo este ejercicio.</dd>
+            <dd>Colocarás tres conos en una línea o triángulo, a unos pasos de distancia. Luego, simplemente tendrás que driblar el balón entre los conos, permitiendo que las superficies de los pies controlen el balón. De esta forma practicarás los toques rápidos al balón y conseguirás mejorar tu control y velocidad.</dd>
+        <p>Pases de pared</p>
+            <dd>Los pases de pared son una gran manera de practicar los pases con el balón y de fortalecer tus reflejos. Este ejercicio requiere estar de pie a un par de metros de la pared.</dd>
+            <dd>Para empezar, lanza el balón contra la pared y haz controles de balón con tus pies. Después devuelve la pelota contra la pared y repite este proceso hasta que no puedas controlarlo más. Con la práctica y la dedicación a este ejercicio, la dificultad disminuirá.</dd>
+        <p>25’s Dribbling</p>
+            <dd>Este es otro de los mejores ejercicios de fútbol para hacer en casa. De esta forma entrenaras tu dribbling. Además, acondicionará y mejorará tu habilidad para regatear.</dd>
+            <dd>Alinea de seis a diez conos a cinco metros de distancia. Luego, conduce el balón a través de los conos. Repite este ejercicio alternando entre la parte exterior e interior. Circula a la derecha, luego a la izquierda y alrededor de los conos.</dd>
+        <p>Push-Pull</p>
+            <dd>El push-pull es un ejercicio que ejercitará los músculos de su pie que fortalecen el regate. Si te quieres focalizar en tus habilidades de regate, este es otro de los mejores ejercicios de fútbol que puedes practicar en casa. Se puede hacer todos los días para conseguir mejores resultados y no necesitas nada más que tus pies.</dd>
+            <dd>Pon tu pie en el balón y muévelo desde tu dedo del pie hasta el talón y de nuevo al dedo del pie. Cambia de pie rápidamente. Puedes hacer este movimiento unas 100 veces.</dd>
+        <p>Pasos de escalera</p>
+            <dd>Este es un ejercicio que te ayudará mejorar tu equilibrio y resistencia. Pon la pelota delante de ti, coloca tu pie encima de la pelota y luego abajo. Alterna rápido tus pies como si estuvieras subiendo escaleras.</dd>
+            <dd>Aunque suene como un ejercicio sencillo, una vez que te pones en marcha, tu equilibrio y el control de la pelota serán ciertamente desafiados. Sin duda se trata de una gran práctica para hacer en casa, que además beneficiará enormemente a tu juego.</dd>
+    <h2>COMENTARIOS</h2>
+    <section class="contenedor-comentarios">
+        <div class="comentarios-usuarios">
+            <div class="comentario-principal-usuario">
+                <div class="avatar">
+                    <img src="Imagene/happy-hispanic-woman-against-white-background.webp" alt="img">
+                </div>
+                <div class="comentario">
+                    <div class="usuario-comentario">
+                        <div class="texto">
+                            <a href="#" title="" class="nombre-usuario">Camila valle</a> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla tenetur necessitatibus, error debitis provident obcaecati blanditiis incidunt amet suscipit libero praesentium ducimus omnis harum commodi nobis modi perspiciatis? Quia, facilis.
+                            <div class="menu-comentario">
+                                <i class="fas fa-pen"></i>
+                                <ul class="menu">
+                                    <li><a href="">Editar</a></li>
+                                    <li><a href="">Eliminar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="botones-comentario">
+                            <button type="" class="boton-puntuar">
+                                <i class="fas fa-thumbs-up"></i>
+                                5
+                            </button>
+                            <button type="" class="boton-responder">
+                                responrder
+                            </button>
+                            <span class="tiempo-comentario">
+                                hece 3 min
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contenedor-sub-comentarios">
+                        <div class="comentario-principal-usuario">
+                            <div class="avatar">
+                                <img src="Imagene/foto-de-un-joven-guapo-de-pie-sobre-un-fondo-gris.webp" alt="img">
+                            </div>
+                            <div class="comentario">
+                                <div class="usuario-comentario">
+                                    <div class="texto">
+                                        <a href="#" title="" class="nombre-usuario">Estevan Hernandez</a> Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
+                                        <div class="menu-comentario">
+                                            <i class="fas fa-pen"></i>
+                                            <ul class="menu">
+                                                <li><a href="">Editar</a></li>
+                                                <li><a href="">Eliminar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="botones-comentario">
+                                        <button type="" class="boton-puntuar">
+                                            <i class="fas fa-thumbs-up"></i>
+                                            12
+                                        </button>
+                                        <button type="" class="boton-responder">
+                                            responrder
+                                        </button>
+                                        <span class="tiempo-comentario">
+                                            hece 3 min
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="area-comentar">
+            <div class="avatar">
+                <img src="Imagene/photo-1581484758408-7af4245410fa.webp" alt="img">
+            </div>
+            <form action="#" method="post" class="inputs-comentarios">
+                <textarea name="" class="area-comentario"></textarea>
+                <div class="botones-comentar">
+                    <div class="boton-subir-archivo">
+                        <label class="boton-file" for="adjuntar">
+                            <i class="far fa-image"></i>
+                            Adjuntar archivo
+                        </label>
+                        <input type="file" name="" value="" placeholder="" id="adjuntar">
+                    </div>
+                    <button class="boton-enviar" type="sutmit">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
