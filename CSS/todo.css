@@ -141,11 +141,15 @@
 #nom pre{
     font-size: 1vw;
 }
+
 .contenedor-comentarios {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
+}
+#nom h1{
+    font-size: 8vw;
 }
 
 .contenedor-comentarios img {
@@ -187,7 +191,6 @@
     margin-right: .5rem;
     color: inherit;
 }
-/* botones comentar */
 .boton-subir-archivo {
     position: relative;
     display: inline-block;
@@ -222,7 +225,6 @@
     background-color: #4C6FA7;
 }
 
-/* fin */
 .contenedor-comentarios .comentario-principal-usuario .comentario,
 .area-comentar .inputs-comentarios {
     flex-grow: 1;
@@ -257,8 +259,6 @@
 .area-comentar .inputs-comentarios .botones-comentar {
     display: flex;
 }
-
-/* comentarios de usuario */
 .comentarios-usuarios .comentario-principal-usuario {
     display: flex;
     flex-wrap: wrap;
@@ -390,8 +390,6 @@
 .boton-responder i {
     margin-right: .5rem;
 }
-
-/* publicacion realizada */
 .publicacion-realizada {
     margin-bottom: 1.5rem;
 }
@@ -436,17 +434,16 @@
     font-size: 0.8em;
     color: #909090;
 }
-.bread{
-    background-image: url(Imagene/save_regular_icon_202765.png);
+#nom li a:link{
+    color: purple;
 }
-.non{
-    background-image: url(Imagene/Estrella_amarilla.png);
+#nom li a:hover{
+    background-color: gray;
+    color: white;
 }
-.bot{
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
+#nom li a:active{
+    color:peru;
+}
+#nom li a:focus{
+    outline: 2px solid burlywood;
 }
