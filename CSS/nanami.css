@@ -2,29 +2,57 @@
   color: aqua;
 }
 
-.vertical-words {
+.info-container {
+  background-color: #4de332; /* Color de fondo del contenedor */
+  padding: 20px; /* Espacio interior del contenedor */
+  border-radius: 10px; /* Bordes redondeados del contenedor */
+  margin: 20px auto; /* Margen superior e inferior automático, margen lateral 20px */
+  text-align: center; /* Centra el contenido */
+  width: fit-content; /* Ancho del contenedor ajustado al contenido */
+}
+
+.info-title {
+  font-size: 36px; /* Tamaño de letra grande para el título */
+  color: #333; /* Color del texto del título */
+  margin: 0; /* Elimina el margen del título para que no haya espacio extra */
+}
+
+.vertical-buttons {
   display: flex;
   flex-direction: column; /* Alinea los elementos en una columna (verticalmente) */
   align-items: center; /* Centra los elementos horizontalmente */
-  text-align: center; /* Centra el texto dentro de cada elemento */
-  margin: 20px; /* Añade un margen alrededor del contenedor */
+  margin-top: 20px; /* Margen superior para separar los botones del título */
 }
 
 .word {
-  font-size: 48px; /* Cambia el tamaño de la letra */
-  margin: 20px 0; /* Añade espacio vertical entre las palabras */
+  font-size: 40px; /* Cambia el tamaño de la letra */
+  margin: 40px 0; /* Añade espacio vertical entre los botones */
+  padding: 10px 20px; /* Añade espacio dentro del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  color: rgb(51, 233, 31);
 }
 
 .word.red {
-  color: red;
+  background-color: red;
 }
 
 .word.green {
-  color: green;
+  background-color: green;
 }
 
 .word.blue {
-  color: blue;
+  background-color: blue;
 }
+
+.word:hover {
+  opacity: 0.8; /* Cambia la opacidad al pasar sobre el botón para indicar interactividad */
+}
+
+
+
+
+
 
 
