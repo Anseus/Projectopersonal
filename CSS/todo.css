@@ -121,7 +121,12 @@
 .melocoton{
     position: absolute;
     top: 13vw;
-    left: 15vw;
+    left: 20vw;
+}
+.fresa{
+ position: absolute;
+ top: 13vw;
+left: 36vw;
 }
 #nom li{
     font-size: 2vw;
@@ -449,4 +454,12 @@
 }
 #pato p{
     font-size: 3vw;
+}
+#mayonesa img{
+    width: 25vw;
+    height: 25vw;
+
+}
+#mayonesa p{
+    font-size: 2vw;
 }
