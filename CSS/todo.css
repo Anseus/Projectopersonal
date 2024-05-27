@@ -447,3 +447,6 @@
 #nom li a:focus{
     outline: 2px solid burlywood;
 }
+#pato p{
+    font-size: 3vw;
+}
